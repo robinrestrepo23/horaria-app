@@ -26,6 +26,7 @@ export default function UploadForm() {
         className="block w-full text-sm text-gray-600 border rounded-lg p-2"
       />
       <Button type="submit">Subir archivo</Button>
+      <span> *pdf, *csv, *xlsx</span>
     </form>
   );
 }

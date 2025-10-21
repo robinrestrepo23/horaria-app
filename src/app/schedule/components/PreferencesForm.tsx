@@ -12,7 +12,12 @@ export default function PreferencesForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Preferencias:", preferences);
+    if (!preferences.dias || !preferences.horaFin || !preferences.horaInicio) {
+      alert("Por favor completa todas las preferencias.");
+    } else {
+      alert("Preferencias guardadas con éxito.");
+      console.log("Preferencias guardadas:", preferences);
+    }
   };
 
   return (

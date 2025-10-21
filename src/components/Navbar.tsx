@@ -17,7 +17,7 @@ export function Navbar() {
         </Link>
         <div className="space-x-6">
           <Link href="/schedule" className="hover:text-blue-600 transition">
-            Generar Horario
+            Hacer Horario
           </Link>
           <Link href="/results" className="hover:text-blue-600 transition">
             Resultados
